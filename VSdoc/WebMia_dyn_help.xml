@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="WebMia" Title="WebMia Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.About" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000007.html" LinkGroup="WebMia">About Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.Address" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A2.html" LinkGroup="WebMia">Address Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000006F.html" LinkGroup="WebMia">Admin Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Program.BuildWebHost" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B0.html" LinkGroup="WebMia">BuildWebHost Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000076.html" LinkGroup="WebMia">Change Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Change" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000081.html" LinkGroup="WebMia">Change Constructor {WebMia.Models.Change}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.Change" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000001A.html" LinkGroup="WebMia">Change Method {WebMia.Controllers.DataController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.Change" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000084.html" LinkGroup="WebMia">Change Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.ChangeItemContext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000025.html" LinkGroup="WebMia">ChangeItemContext Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.ChangeVendingContext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000000E.html" LinkGroup="WebMia">ChangeVendingContext Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.CheckLowStockMailService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A6.html" LinkGroup="WebMia">CheckLowStockMailService Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.CheckLowStockMailService.CheckLowStockMailService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A7.html" LinkGroup="WebMia">CheckLowStockMailService Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.CheckLowStok" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000043.html" LinkGroup="WebMia">CheckLowStok Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.CheckLowStok.CheckLowStok" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000044.html" LinkGroup="WebMia">CheckLowStok Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.City" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A1.html" LinkGroup="WebMia">City Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.CloseSession" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000003B.html" LinkGroup="WebMia">CloseSession Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_10_Cents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000007D.html" LinkGroup="WebMia">Coins_10_Cents Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_1_Cents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000080.html" LinkGroup="WebMia">Coins_1_Cents Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_1_Eur" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000007A.html" LinkGroup="WebMia">Coins_1_Eur Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_20_Cents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000007C.html" LinkGroup="WebMia">Coins_20_Cents Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_2_Cents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000007F.html" LinkGroup="WebMia">Coins_2_Cents Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_2_Eur" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000079.html" LinkGroup="WebMia">Coins_2_Eur Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_50_Cents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000007B.html" LinkGroup="WebMia">Coins_50_Cents Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Coins_5_Cents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000007E.html" LinkGroup="WebMia">Coins_5_Cents Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Startup.Configuration" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B3.html" LinkGroup="WebMia">Configuration Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Startup.Configure" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B5.html" LinkGroup="WebMia">Configure Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Startup.ConfigureServices" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B4.html" LinkGroup="WebMia">ConfigureServices Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000082.html" LinkGroup="WebMia">DataBaseContext Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.DataBaseContext" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000083.html" LinkGroup="WebMia">DataBaseContext Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000005.html" LinkGroup="WebMia">DataController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.DataController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000006.html" LinkGroup="WebMia">DataController Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.DeleteContextItem" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000000F.html" LinkGroup="WebMia">DeleteContextItem Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.DeleteUsers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000000A.html" LinkGroup="WebMia">DeleteUsers Method {WebMia.Controllers.DataController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.DeleteUsers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000003F.html" LinkGroup="WebMia">DeleteUsers Method {WebMia.Controllers.SecurityController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.UserLogged.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000005B.html" LinkGroup="WebMia">Dispose Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin.Email" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000073.html" LinkGroup="WebMia">Email Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.UserLogged.GetInstance" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000005A.html" LinkGroup="WebMia">GetInstance Method {WebMia.CustomControls.UserLogged}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.SinglentonCheckService.GetInstance" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000AB.html" LinkGroup="WebMia">GetInstance Method {WebMia.Services.SinglentonCheckService}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.GetNewRandomPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000041.html" LinkGroup="WebMia">GetNewRandomPassword Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.GetUserIdLogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000036.html" LinkGroup="WebMia">GetUserIdLogged Method {WebMia.Controllers.SecurityController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILogged.GetUserIdLogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000066.html" LinkGroup="WebMia">GetUserIdLogged Method {WebMia.Interfaces.ILogged}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.LoggingTime.GetUserLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000050.html" LinkGroup="WebMia">GetUserLogin Method {WebMia.CustomControls.LoggingTime}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILoggingTime.GetUserLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000006B.html" LinkGroup="WebMia">GetUserLogin Method {WebMia.Interfaces.ILoggingTime}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.GetUserLogued" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000035.html" LinkGroup="WebMia">GetUserLogued Method {WebMia.Controllers.SecurityController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILogged.GetUserLogued" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000065.html" LinkGroup="WebMia">GetUserLogued Method {WebMia.Interfaces.ILogged}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.GetUserRolId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000037.html" LinkGroup="WebMia">GetUserRolId Method {WebMia.Controllers.SecurityController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILogged.GetUserRolId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000068.html" LinkGroup="WebMia">GetUserRolId Method {WebMia.Interfaces.ILogged}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.GetUsers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000009.html" LinkGroup="WebMia">GetUsers Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.HomeController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000028.html" LinkGroup="WebMia">HomeController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.HomeController.HomeController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000029.html" LinkGroup="WebMia">HomeController Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ICheckLowStock" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000005D.html" LinkGroup="WebMia">ICheckLowStock Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ICheckLowStockMailService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000005F.html" LinkGroup="WebMia">ICheckLowStockMailService Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.IInitialAlert" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000061.html" LinkGroup="WebMia">IInitialAlert Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000063.html" LinkGroup="WebMia">ILogged Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILoggingTime" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000069.html" LinkGroup="WebMia">ILoggingTime Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.IMail" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000006C.html" LinkGroup="WebMia">IMail Interface</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Items.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000008D.html" LinkGroup="WebMia">Id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.RolesPermissionXml.IdXml" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000094.html" LinkGroup="WebMia">IdXml Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Id_Change" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000077.html" LinkGroup="WebMia">Id_Change Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Id_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000016.html" LinkGroup="WebMia">Id_Machine Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Change.Id_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000078.html" LinkGroup="WebMia">Id_Machine Property {WebMia.Models.Change}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Id_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000098.html" LinkGroup="WebMia">Id_Machine Property {WebMia.Models.Slots}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.Id_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000009F.html" LinkGroup="WebMia">Id_Machine Property {WebMia.Models.Vending_Machine}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Id_Product" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000018.html" LinkGroup="WebMia">Id_Product Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Id_Product" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000099.html" LinkGroup="WebMia">Id_Product Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Id_Slot" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000017.html" LinkGroup="WebMia">Id_Slot Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Id_Slot" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000097.html" LinkGroup="WebMia">Id_Slot Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.HomeController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000002A.html" LinkGroup="WebMia">Index Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.InfoLowStockSave<T1, T2>" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000046.html" LinkGroup="WebMia">InfoLowStockSave<T1, T2> Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.InfoLowStockSave<T1, T2>.InfoLowStockSave" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000049.html" LinkGroup="WebMia">InfoLowStockSave<T1, T2> Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.InitialAlerts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000004A.html" LinkGroup="WebMia">InitialAlerts Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.InitialAlerts.InitialAlerts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000004B.html" LinkGroup="WebMia">InitialAlerts Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.IsAllowed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000040.html" LinkGroup="WebMia">IsAllowed Method {WebMia.Controllers.SecurityController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILogged.IsAllowed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000067.html" LinkGroup="WebMia">IsAllowed Method {WebMia.Interfaces.ILogged}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.IsUserLogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000003A.html" LinkGroup="WebMia">IsUserLogged Method {WebMia.Controllers.SecurityController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILogged.IsUserLogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000064.html" LinkGroup="WebMia">IsUserLogged Method {WebMia.Interfaces.ILogged}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Items.ItemName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000008E.html" LinkGroup="WebMia">ItemName Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Items" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000008C.html" LinkGroup="WebMia">Items Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Items.Items" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000008F.html" LinkGroup="WebMia">Items Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.Items" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000085.html" LinkGroup="WebMia">Items Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.LastUserLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000026.html" LinkGroup="WebMia">LastUserLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.LoggingTime" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000004E.html" LinkGroup="WebMia">LoggingTime Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.Login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000039.html" LinkGroup="WebMia">Login Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.LoginControl" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000034.html" LinkGroup="WebMia">LoginControl Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.HomeController.MachineGestion" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000002B.html" LinkGroup="WebMia">MachineGestion Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.MachineList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000008.html" LinkGroup="WebMia">MachineList Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.MachineUbication" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000000B.html" LinkGroup="WebMia">MachineUbication Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.Machine_Model" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A0.html" LinkGroup="WebMia">Machine_Model Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.MailService.MailOperationType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000052.html" LinkGroup="WebMia">MailOperationType Enumeration</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.MailService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000051.html" LinkGroup="WebMia">MailService Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Program.Main" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000AF.html" LinkGroup="WebMia">Main Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.SecurityConversor.Md5Calculator" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000057.html" LinkGroup="WebMia">Md5Calculator Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.MessagesController.MessageGestion" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000002F.html" LinkGroup="WebMia">MessageGestion Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.MessagesController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000002D.html" LinkGroup="WebMia">MessagesController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.MessagesController.MessagesController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000002E.html" LinkGroup="WebMia">MessagesController Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.NewMachine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000000C.html" LinkGroup="WebMia">NewMachine Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.NewUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000003E.html" LinkGroup="WebMia">NewUser Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.NewUserControl" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000038.html" LinkGroup="WebMia">NewUserControl Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.LoggingTime.NewUserLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000004F.html" LinkGroup="WebMia">NewUserLogin Method {WebMia.CustomControls.LoggingTime}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ILoggingTime.NewUserLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000006A.html" LinkGroup="WebMia">NewUserLogin Method {WebMia.Interfaces.ILoggingTime}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin.Nombre" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000074.html" LinkGroup="WebMia">Nombre Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.OnConfiguring" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000008B.html" LinkGroup="WebMia">OnConfiguring Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.OperationType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000001.html" LinkGroup="WebMia">OperationType Enumeration</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.PartialChangeView" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000001C.html" LinkGroup="WebMia">PartialChangeView Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.PartialItemsView" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000001B.html" LinkGroup="WebMia">PartialItemsView Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.MessagesController.PartialMessageView" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000030.html" LinkGroup="WebMia">PartialMessageView Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.PartialSlotsView" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000001D.html" LinkGroup="WebMia">PartialSlotsView Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.PassRecovery" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000003D.html" LinkGroup="WebMia">PassRecovery Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin.Password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000072.html" LinkGroup="WebMia">Password Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.Poblation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A3.html" LinkGroup="WebMia">Poblation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Price" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000015.html" LinkGroup="WebMia">Price Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Price" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000009B.html" LinkGroup="WebMia">Price Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Product" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000012.html" LinkGroup="WebMia">Product Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.Products" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000010.html" LinkGroup="WebMia">Products Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ICheckLowStock.ProductsCheck" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000005E.html" LinkGroup="WebMia">ProductsCheck Method {WebMia.Interfaces.ICheckLowStock}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.CheckLowStok.ProductsCheck" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000045.html" LinkGroup="WebMia">ProductsCheck Method {WebMia.Services.CheckLowStok}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.ProductsEdition" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000020.html" LinkGroup="WebMia">ProductsEdition Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Program" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000AE.html" LinkGroup="WebMia">Program Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.InitialAlerts.ReturnInfo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000004C.html" LinkGroup="WebMia">ReturnInfo Method {WebMia.Controllers.InitialAlerts}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.IInitialAlert.ReturnInfo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000062.html" LinkGroup="WebMia">ReturnInfo Method {WebMia.Interfaces.IInitialAlert}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.SinglentonCheckService.ReturnObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000AC.html" LinkGroup="WebMia">ReturnObject Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Rol" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000090.html" LinkGroup="WebMia">Rol Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.Rol" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000089.html" LinkGroup="WebMia">Rol Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Rol.RolDescription" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000092.html" LinkGroup="WebMia">RolDescription Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.RolesPermissionXml" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000093.html" LinkGroup="WebMia">RolesPermissionXml Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.RolesPermissionXml" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000008A.html" LinkGroup="WebMia">RolesPermissionXml Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveChangeData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000027.html" LinkGroup="WebMia">SaveChangeData Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveChangeDataChange" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000021.html" LinkGroup="WebMia">SaveChangeDataChange Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveChangeDataItems" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000022.html" LinkGroup="WebMia">SaveChangeDataItems Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveChangeDataProducts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000001E.html" LinkGroup="WebMia">SaveChangeDataProducts Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveChangeDataStockProducts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000024.html" LinkGroup="WebMia">SaveChangeDataStockProducts Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveChangeMachineAssign" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000001F.html" LinkGroup="WebMia">SaveChangeMachineAssign Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SaveNewMachine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000000D.html" LinkGroup="WebMia">SaveNewMachine Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.Security" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000088.html" LinkGroup="WebMia">Security Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000031.html" LinkGroup="WebMia">SecurityController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.SecurityController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000033.html" LinkGroup="WebMia">SecurityController Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.SecurityConversor" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000056.html" LinkGroup="WebMia">SecurityConversor Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.SendEMail" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000003C.html" LinkGroup="WebMia">SendEMail Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.ICheckLowStockMailService.SendEmailLowStock" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000060.html" LinkGroup="WebMia">SendEmailLowStock Method {WebMia.Interfaces.ICheckLowStockMailService}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.CheckLowStockMailService.SendEmailLowStock" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A8.html" LinkGroup="WebMia">SendEmailLowStock Method {WebMia.Services.CheckLowStockMailService}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.MailService.SendMail" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000055.html" LinkGroup="WebMia">SendMail Method {WebMia.CustomControls.MailService}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces.IMail.SendMail" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000006D.html" LinkGroup="WebMia">SendMail Method {WebMia.Interfaces.IMail}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.SetMachineAdmin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000023.html" LinkGroup="WebMia">SetMachineAdmin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.SinglentonCheckService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A9.html" LinkGroup="WebMia">SinglentonCheckService Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.SinglentonCheckService.SinglentonCheckService" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000AA.html" LinkGroup="WebMia">SinglentonCheckService Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Slot_Number" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000013.html" LinkGroup="WebMia">Slot_Number Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Slot_Number" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000009C.html" LinkGroup="WebMia">Slot_Number Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000096.html" LinkGroup="WebMia">Slots Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Slots" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000009D.html" LinkGroup="WebMia">Slots Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.Slots" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000086.html" LinkGroup="WebMia">Slots Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Startup" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B1.html" LinkGroup="WebMia">Startup Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Startup.Startup" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B2.html" LinkGroup="WebMia">Startup Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts.Stock" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000014.html" LinkGroup="WebMia">Stock Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.Stock" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000019.html" LinkGroup="WebMia">Stock Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Slots.Stock" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000009A.html" LinkGroup="WebMia">Stock Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.DataController.UnionProducts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000011.html" LinkGroup="WebMia">UnionProducts Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.UserLogged.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000059.html" LinkGroup="WebMia">User Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.UserAdministrator" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A4.html" LinkGroup="WebMia">UserAdministrator Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.HomeController.UserGestion" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000002C.html" LinkGroup="WebMia">UserGestion Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls.UserLogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000058.html" LinkGroup="WebMia">UserLogged Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin.UserRolId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000075.html" LinkGroup="WebMia">UserRolId Property {WebMia.Models.Admin}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Rol.UserRolId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000091.html" LinkGroup="WebMia">UserRolId Property {WebMia.Models.Rol}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin.User_Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000070.html" LinkGroup="WebMia">User_Id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Admin.User_Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000071.html" LinkGroup="WebMia">User_Name Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000009E.html" LinkGroup="WebMia">Vending_Machine Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.Vending_Machine.Vending_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000A5.html" LinkGroup="WebMia">Vending_Machine Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.DataBaseContext.Vending_Machine" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000087.html" LinkGroup="WebMia">Vending_Machine Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000AD.html" LinkGroup="WebMia">WebMia Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_00000000000000B6.html" LinkGroup="WebMia">WebMia Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000000.html" LinkGroup="WebMia">WebMia.Controllers Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.CustomControls" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000004D.html" LinkGroup="WebMia">WebMia.CustomControls Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Interfaces" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000005C.html" LinkGroup="WebMia">WebMia.Interfaces Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_000000000000006E.html" LinkGroup="WebMia">WebMia.Models Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000042.html" LinkGroup="WebMia">WebMia.Services Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.InfoLowStockSave<T1, T2>.id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000048.html" LinkGroup="WebMia">id Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Services.InfoLowStockSave<T1, T2>.sb" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000047.html" LinkGroup="WebMia">sb Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Controllers.SecurityController.userLogged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000032.html" LinkGroup="WebMia">userLogged Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="WebMia.Models.RolesPermissionXml.xmlInfo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:WebMia.chm::/topic_0000000000000095.html" LinkGroup="WebMia">xmlInfo Property</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+

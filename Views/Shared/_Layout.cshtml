@@ -1,0 +1,39 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/css/Bar.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+
+        <div style="width:100%; min-width:1000px">
+            <div id="LateralBar" style="width:23%; min-width:250px">
+                <h id="TitleLateralLinks">CONTROL PRINCIPAL</h>
+                <ul>
+                    <li id="LateralLinks"  onclick="window.location.href = '@Url.Action("Index", "Home")';">Inicio</li>
+                    <li id="LateralLinks" onclick="window.location.href = '@Url.Action("MachineGestion", "Home")';">Gestión de máquinas</li>
+                    <li id="LateralLinks" onclick="window.location.href = '@Url.Action("UserGestion", "Home")';">Gestión de usuarios</li>
+                    <li id="LateralLinks" onclick="window.location.href = '@Url.Action("MessageGestion", "Messages")';">Mensajeria</li>
+                    <li id="LateralLinks" onclick="window.location.href = '@Url.Action("StatsGestion", "Stats")';">Estadísticas</li>
+                    <li id="LateralLinks" onclick="window.location.href = '@Url.Action("About", "About")';">Ayuda</li>
+                    <li id="LateralLinks" onclick="window.location.href = '@Url.Action("CloseSession", "Security")';">Cerrar Sesion</li>
+
+                </ul>
+                <div id="CopyRight">
+                    &copy; Carlos Moreno Palacios
+                </div>
+
+            </div>
+            <div id="NavBarBlue"  style="width:75%; min-width:800px">
+                <img class="responsive" src="~/images/banner1.png" />
+            </div>
+         </div>
+            <div id="RenderBody" style="min-width:900px">
+                @RenderBody()
+            </div>
+</body>
+</html>

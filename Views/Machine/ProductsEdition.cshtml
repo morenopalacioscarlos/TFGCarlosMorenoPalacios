@@ -1,0 +1,65 @@
+﻿@model WebMia.Models.DataBaseContext
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/ProductReload.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+@{
+    ViewData["Title"] = "Items";
+    Layout = "_MachineGestionLayout";
+}
+
+<div class="table-responsive">
+    <div style="padding-left:2em">
+        @if (ViewBag.ProductsEdition != null)
+        {
+            <label>Nombre Del Producto</label><br /><input id="InputTextNewItem" type="text" /> <button id="AddNewItemRow" style="border-radius:20px" class="btn-primary">Añadir nuevo Item</button>
+
+            <div style="min-height:0.5em"></div>
+            <br />
+            <table style="width:100%" ;>
+                <tr id="DisplayData" style="height:2.5em">
+
+                    <td style="width:30%; padding-left:2em;min-width:100px ">ITEM ID</td>
+                    <td style="width:30%; padding-left:10em; min-width:50px">PRODUCTO</td>
+                    <td style="width:30%; padding-left:10em; min-width:50px">ELIMINAR</td>
+                    <td style="width:10%"></td>
+                </tr>
+            </table>
+            <div id="SeparationEditionProducts" style="height:25em; overflow:auto">
+                <table id="tableDataItems" class="table table-hover" background-color:lightgrey">
+
+                    @foreach (Items item in ViewBag.ProductsEdition)
+                {
+                        <tr>
+                            @if (item.Id == 0)
+                    {
+                                <td class="EditableNameItem" style="width:30%; padding-left:4em; background-color:darkgray" contenteditable="false">@item.Id</td>
+                                <td class="EditableNameItem" style="width:30%; padding-left:8.5em;background-color:darkgray" contenteditable="false">@item.ItemName</td>
+                                <td style="width:30%; padding-left:7.5em;background-color:darkgray"></td>
+
+
+                            }
+                            else
+                            {
+                                <td class="EditableNameItem" style="width:30%; padding-left:4em" contenteditable="false">@item.Id</td>
+                                <td class="EditableNameItems" style="width:30%; padding-left:8.5em;" contenteditable="true">@item.ItemName</td>
+                                <td style="width:30%; padding-left:7.5em;"><img class="DeleteItems" onclick="" width="20em" height="20em" src="~/images/DeleteX.png" value=@item.Id /></td>
+
+                            }
+
+                        </tr>
+
+                    }
+                </table>
+            </div>
+            <button id="SavechangesItems"class="btn btn-success" style=" margin-top:1em">Confirmar Cambios</button>
+            <button id="Cancelchanges" class="btn btn-danger" style="  margin-top:1em">Cancelar Cambios</button>
+        }
+    </div>
+</div>

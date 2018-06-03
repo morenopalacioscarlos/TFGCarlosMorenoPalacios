@@ -1,0 +1,74 @@
+﻿    @model WebMia.Models.DataBaseContext
+    @using WebMia.Services
+    @using System.Text
+    @using WebMia.CustomControls
+    @using WebMia.Controllers
+
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+    @{
+        ViewData["Title"] = "Index";
+        Layout = "_Layout";
+    }
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="~/css/site.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js"></script>
+    <link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+
+
+    @if (ViewBag.LowStockAlert != null)
+    {
+        <h1 style="padding-top:1em">Los siguientes elementos se encuentran con niveles bajos:</h1>
+        <br /><br />
+        foreach (InfoLowStockSave<StringBuilder, int> item in ViewBag.LowStockAlert)
+        {
+            <br />
+            <div id="textShow">
+                @{
+                    var itemsToShow = item.sb.ToString().Split(".");
+
+                    foreach (var product in itemsToShow)
+                    {
+                        <p style="text-align:left;padding-left:2em; float:left";>@product</p>
+                        <br />
+                    }
+                }
+            </div>
+         }
+        <br />              
+        <br />
+
+        foreach (InfoLowStockSave<StringBuilder, int> item in ViewBag.LowCoinsAlert)
+        {
+        <br />
+
+        <div id="textShow">
+        @{
+            var itemsToShow = item.sb.ToString().Split(".");
+
+            foreach (var product in itemsToShow)
+            {
+                if (product.Contains(":"))
+                {
+                    <br /><br />
+                    <p style="text-align:left;padding-left:2em; float:left" ;>@product</p>
+                    <br /><br />
+                    continue;
+
+                }
+                <p style="text-align:left;padding-left:2em; float:left" ;>@product</p>
+                <br />
+            }
+        }
+    </div>
+
+
+    }                     
+    }
+    else
+    {
+    <h1>No hay noticias que mostrar</h1>
+
+    }

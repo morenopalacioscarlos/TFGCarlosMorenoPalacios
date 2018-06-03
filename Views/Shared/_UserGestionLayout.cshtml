@@ -1,0 +1,77 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+    <link href="~/css/Bar.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <script src="~/js/site.js"></script>
+    <title>@ViewBag.Title</title>
+
+</head>
+
+<body>
+    <div id="LateralBar" style="width:25%; min-width:250px">
+        <b id="TitleLateralLinks" >GESTION DE USUARIOS</b><br />  
+        <ul>
+            @*Se comprueba la autorización al acceso de los datos y solo se muestrn los links autorizados*@
+            @if (ViewBag.Allowed != null)
+            {
+                foreach (var item in ViewBag.Allowed)
+                {
+                    switch (item)
+                    {
+                        case "ALL":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("Index", "Home")';">Inicio</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("NewUser", "Users")';">Alta usuario</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("DeleteUsers", "Users")';">Baja usuario</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("ChangePassword", "Users")';" >Cambiar contraseña</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("GetUsers", "Users")';">Usuarios en Alta</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("SetMachineAdmin", "Users")';">Asignación de máquinas</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("LastUserLogin", "Users")';">Registro Conexión</li>
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("CloseSession", "Security")';">Cerrar Sesion</li>
+                            break;
+                        case "INDEX":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("Index", "Home")';">Inicio</li>
+                            break;
+                        case "GET_USERS":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("GetUsers", "Users")';">Usuarios en Alta</li>
+                            break;
+                        case "SET_MACHINE_ADMIN":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("SetMachineAdmin", "Users")';">Asignación de máquinas</li>
+                            break;
+                        case "NEW_USER":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("NewUser", "USers")';">Alta usuario</li>
+                            break;
+                        case "DELETE_USERS":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("DeleteUsers", "Users")';">Baja usuario</li>
+                            break;
+                        case "CLOSESESSION":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("CloseSession", "Security")';">Cerrar Sesion</li>
+                            break;
+                        case "CHANGEPASSWORD":
+                            <li id="LateralLinks" onclick="window.location.href = '@Url.Action("ChangePassword", "Users")';">Cambiar contraseña</li>
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+        </ul>
+        <div id="CopyRight">
+            &copy; Carlos Moreno Palacios
+        </div>
+
+    </div>
+        <div id="NavBarBlue" style="width:75%; min-width:800px">
+            <img class="responsive" src="~/images/banner1.png" />
+        </div>
+
+    <div id="RenderBody" style="min-width:900px">
+        @RenderBody()
+    </div>
+</body>
+</html>

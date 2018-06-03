@@ -1,0 +1,180 @@
+﻿
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/ProductReload.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="~/js/Chart.js"></script>
+
+@{
+    Layout = "_StatsLayout";
+    ViewData["Title"] = "Estadística Máquinas";
+}
+
+
+
+
+<div style="padding-left:2em">
+    <div style="width:30%; height:31em; max-height:31em; float:left; overflow:auto">
+        <table>
+            <tr id="DisplayData" style="height:2.5em">
+                <td style="width:10%"></td>
+                <td style="width:5%; min-width:50px">ID</td>
+                <td style="width:70%; min-width:50px">DIRECCION</td>
+                <td style="width:15%"></td>
+            </tr>
+        </table>
+        <table id="tableData" class="table table-hover" background-color:lightgrey">
+
+            @foreach (var item in ViewBag.ListMachineList)
+            {
+                <tr>
+                    <td style="width:2%"></td>
+                    <td class="ProductStats" contenteditable="false" style="width:18%; " id="@item.Id_Machine">@item.Id_Machine</td>
+                    <td class="ProductStats" contenteditable="false" style="width:80%;" id="@item.Id_Machine">@item.Address</td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+    @{
+        //Variables para dibujar gráfica
+        var SoldJanuary = 0;
+        var SoldFebrary = 0;
+        var SoldMarch = 0;
+        var SoldApril = 0;
+        var SoldMay = 0;
+        var SoldJune = 0;
+        var SoldJuly = 0;
+        var SoldAugust = 0;
+        var SoldSeptember = 0;
+        var SoldOctober = 0;
+        var SoldNovember = 0;
+        var SoldDecember = 0;
+    }
+
+    <div id="canvas-holder" style="width:67%; height:31em; max-height:31em; float:left">
+        
+        @if (ViewBag.DateInfo != null && ViewBag.itemSelected != null)
+        {
+            <h1>Ventas Totales máquina con Id @ViewBag.itemSelected</h1>
+            foreach (DateTime item in ViewBag.DateInfo)
+            {
+                switch (item.Month)
+                {
+                    case 1:
+                        SoldJanuary++;
+                        break;
+
+                    case 2:
+                        SoldFebrary++;
+                        break;
+
+                    case 3:
+                        SoldMarch++;
+                        break;
+
+                    case 4:
+                        SoldApril++;
+                        break;
+
+                    case 5:
+                        SoldMay++;
+                        break;
+
+                    case 6:
+                        SoldJune++;
+                        break;
+
+                    case 7:
+                        SoldJuly++;
+                        break;
+
+                    case 8:
+                        SoldAugust++;
+                        break;
+
+                    case 9:
+                        SoldSeptember++;
+                        break;
+
+                    case 10:
+                        SoldOctober++;
+                        break;
+
+                    case 11:
+                        SoldNovember++;
+                        break;
+
+                    case 12:
+                        SoldDecember++;
+                        break;
+                }
+            }
+
+            <canvas id="MachineDraw"></canvas>
+            }
+             else
+            {
+            <h1>No hay Datos que mostrar</h1>
+            }
+
+    </div>
+
+        <script>
+
+            var pieData = [{ value: 40, color: "#0b82e7", highlight: "#0c62ab", label: "Google Chrome" },
+            {
+                        value: 16,
+                color: "#e3e860",
+                highlight: "#a9ad47",
+                label: "Android"
+            },
+            {
+                        value: 11,
+                color: "#eb5d82",
+                highlight: "#b74865",
+                label: "Firefox"
+            },
+            {
+                        value: 10,
+                color: "#5ae85a",
+                highlight: "#42a642",
+                label: "Internet Explorer"
+            },
+            {
+                        value: 8.6,
+                color: "#e965db",
+                highlight: "#a6429b",
+                label: "Safari"
+            }
+            ];
+
+
+                    var lineChartData = {
+                labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                datasets: [
+                    {
+                        label: "Venta Productos",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "#6b9dfa",
+                        pointColor: "#1e45d7",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [@SoldJanuary, @SoldFebrary, @SoldMarch, @SoldApril, @SoldMay, @SoldJune, @SoldJuly, @SoldAugust, @SoldSeptember, @SoldOctober, @SoldNovember, @SoldDecember]
+            }
+                ]
+
+            }
+
+        var graph = document.getElementById("MachineDraw").getContext("2d");
+        window.myPie = new Chart(graph).Line(lineChartData, { responsive: true });
+        </script>
+
+    </div>

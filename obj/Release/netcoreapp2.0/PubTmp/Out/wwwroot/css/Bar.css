@@ -1,0 +1,119 @@
+﻿#LateralBar {
+    background: linear-gradient(-90deg,white,  #8ac9ec);
+    position: fixed;
+    left: 0;
+    width: 18%;
+    min-width: 200px;
+    max-height: 100%;
+    height: 100%;
+
+}
+#NavBar {
+    position: relative;
+    width:80%;
+    min-width:800px;
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: 10px;
+    height: 100px;
+    background: linear-gradient(-90deg, white, grey);
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    text-align: center;
+}
+
+#NavBarBlue {
+    position: relative;
+    width: 80%;
+    min-width: 800px;
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: 10px;
+    height: 100px;
+
+    text-align: center;
+}
+
+#NavBarWhitout {
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    height:auto;
+    margin-top: 1px;
+}
+
+#UnirLogo {
+    position: center;
+    float: right;
+    margin-right: 1em;
+}
+
+#logo {
+    float: left;
+    margin-left: 4em;
+    margin-top: 1em;
+}
+
+#NavBarText {
+    position: page;
+    font: Arial bold 120% cursive;
+    text-shadow: 5px 5px 2px #808080;
+    font-size: 10vh;
+    font-size:5vw;
+
+    
+
+}
+#RenderBody {
+    position: page;
+    margin-left: 200px;
+}
+#TitleLateralLinks {
+    margin-top:2em;
+    color:darkslategrey;
+    text-align:center;
+    position:fixed;
+    margin-left:2em;
+    margin-top:4em;
+    padding-top:4em;
+    text-align:center;
+    font-size:1.3em;
+    font-weight:bold;
+
+}
+
+#NavBarLogin {
+    position: relative;
+    background: linear-gradient(-90deg, white, grey);
+    height: auto;
+    border-radius: 20px;
+   width:auto;
+}
+
+#textLogin {
+    padding-top:1em;
+    position: center;
+    text-align: center;
+    font: Arial bold 120% cursive;  
+    font-size: 2.8vw;
+    
+    
+}
+#textNewUser {
+    padding-top: 1em;
+    padding-left:10.5em;
+    font-family:'Colonna MT';
+    font-size: 6vh;
+}
+
+
+#UnirLogoLogin {
+    float: right;
+    margin-right: 1em;
+    
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}

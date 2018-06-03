@@ -1,0 +1,260 @@
+﻿
+div{
+    display:block;
+}
+
+#Login {
+    background: linear-gradient(-90deg,white, #8ac9ec);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    max-width: 20em;
+    min-width: 20em;
+    height: 15em;
+    max-height: 15em;
+    min-height: 15em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#NewMachine {
+    background-color: #8ac9ec;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 35em;
+    min-width: 35em;
+    height: 30em;
+    max-height: 30em;
+    min-height: 30em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#NewUser {
+    background-color: #8ac9ec;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 25em;
+    min-width: 25em;
+    height: 33em;
+    max-height: 33em;
+    min-height: 33em;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+#DeleteUser {
+    background-color: beige;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    margin-left: auto;
+    margin-right: 50em;
+    margin-top: 10px;
+    width:90%;
+    height: 40em;
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#PasswordRecovery {
+    background: linear-gradient(-90deg,white, #8ac9ec);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    width: 20em;
+    max-width: 20em;
+    min-width: 20em;
+    max-height: 16em;
+    min-height: 16em;
+    height: 16em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+label {
+    color:darkslategrey;
+    display: block;
+    margin-bottom: auto;
+    margin-left: 3.2em;
+    font-family:Consolas;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+#Model, #City, #Address, #Poblation, #Slots {
+    border-radius: 10px;
+    display: block;
+    font-size: 1em;
+    height: 2em;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#User, #Password, #email, #ConfirmPassword, #UserName, #rol, #RolDeleteUser {
+    border-radius: 10px;
+    display: block;
+    font-size: 1em;
+    height: 2em;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Cancel {
+    background-color: grey;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 2.5em;
+    margin-right: 2em;
+    margin-top: 5px;
+    text-align: center;
+    width: 110px;
+    float:right;
+    margin-top:0.5em;
+    
+}
+#CancelNewUser {
+    background-color: #a9b1bc;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 2.5em;
+    margin-right: 4em;
+    margin-top: -1em;
+    text-align: center;
+    width: 110px;
+    float: right;
+}
+
+#CancelNewMachine {
+    background-color: #a9b1bc;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 2.5em;
+    margin-right: 6em;
+    margin-top: 0.5em;
+    text-align: center;
+    width: 110px;
+    float: right;
+}
+.RecoveryPass {
+    color: darkred;
+    text-emphasis-color: green;
+    position: center;
+    margin-top: 4.5em;
+    margin-left: 2em;
+}
+ .errorLogin {
+    color: darkred;
+    text-emphasis-color: green;
+    position: center;
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+.errorNewUser {
+    color: darkred;
+    text-emphasis-color: green;
+    position: center;
+    margin-top: 3em;
+    margin-left: 6em;
+}
+.infoNewMachine {
+    color: green;
+    text-emphasis-color: green;
+    position: center;
+    margin-top: 3em;
+    margin-left: 9.5em;
+}
+
+
+#Acept {
+    background-color: grey;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 2.5em;
+    margin-left: 2em;
+    margin-top: 1em;
+    text-align: center;
+    width: 110px;
+    float: left;
+    margin-top:0.5em;
+}
+#AceptNewMachine {
+    background-color: #a9b1bc;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 2.5em;
+    margin-left: 6em;
+    margin-top: 0.5em;
+    text-align: center;
+    width: 110px;
+    float: left;
+}
+
+
+#AceptNewUser {
+    background-color: #a9b1bc;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 2.5em;
+    margin-left: 4em;
+    margin-top: -1em;
+    text-align: center;
+    width: 110px;
+    float: left;
+}
+#Submit {
+    background-color: grey;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-size: 1.1em;
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    text-align: center;
+    width: 130px;
+}
+#RevoceryPass 
+{
+    text-align: center;
+    position: center;
+    color:black;
+    margin-top:2em;
+}
+
+#LoginCopyright {
+    position: absolute;
+    margin-top: 90px;
+    margin-right: 100px;
+}
+
+
+
+
+
+

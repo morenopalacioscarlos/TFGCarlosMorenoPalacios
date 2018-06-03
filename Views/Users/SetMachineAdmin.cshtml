@@ -1,0 +1,66 @@
+﻿
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/Users.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+@{
+    ViewData["Title"] = "Lista Máquinas";
+    Layout = "_UserGestionLayout";
+
+}
+
+<div class="table-responsive">
+    <div style="padding-left:6em">
+        <table>
+            <tr id="DisplayData" style="height:2.5em">
+                <td style="padding-left:0.7em; width:20%">ID VENDING</td>
+                <td style="padding-left:2em; width:30%">DIRECCION</td>
+                <td style="padding-left:2em; width:50%">USUARIOS</td>
+                <td style="width:100%; "></td>
+            </tr>
+        </table>
+
+        @if (ViewBag.UserActive != null && ViewBag.MachineActive != null)
+        {
+            <table id="tableDataAssingMachine" class="table table-hover" background-color:lightgrey">
+
+                @foreach (Vending_Machine vending in ViewBag.MachineActive)
+                {
+                    var machineinfo = @vending.City + " " + vending.Address;
+
+                    <tr>
+                        <td style="padding-left:0.7em; width:20%">@vending.Id_Machine</td>
+
+                        <td style="padding-left:2em; width:30%">@machineinfo </td>
+
+                        <td style="padding-left:2em; width:50%" value="assignMachineComboBox">
+                            <SELECT NAME="AdminUserMachineCombo">
+                                @foreach (Admin user in ViewBag.UserActive)
+                                {
+                                    var itemCombo = "User ID: " + user.User_Id + " Nombre: " + user.Nombre;
+
+                                    if (user.User_Id == vending.UserAdministrator)
+                                    {
+                                        <OPTION selected="selected" VALUE=@user.User_Id>@itemCombo</OPTION>
+                                    }
+                                    else
+                                    {
+                                        <OPTION VALUE=@user.User_Id>@itemCombo</OPTION>
+                                    }
+                                }
+                            </SELECT>
+                        </td>
+                    </tr>
+                }
+            </table>
+        }
+        else
+        {
+            <a> Existe Algún error, contacte con el administrador </a>
+        }
+        <button id="SavechangesMachineAssign" class="btn btn-success">Confirmar Cambios</button>
+    </div>
+</div>

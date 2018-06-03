@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "VMG Login";
+    Layout= "_LoginLayout";
+}
+
+<div id="Login">
+
+    @using (Html.BeginForm("LoginControl", "Security", FormMethod.Post))
+    {
+        <label>USUARIO </label>
+        <input type="text" id="User" name="User" required/><br>
+        <label>CONTRASEÑA </label>
+        <input type="password" id="Password" name="Password"required/><br><br>
+        <input type="submit" value="Aceptar" id="Submit"/>
+    }
+    <div class="errorLogin">@TempData["ErrorLogin"]</div>
+
+
+</div>
+
+<div id="RevoceryPass">
+    @Html.ActionLink("Recuperar contraseña", "PassRecovery", "Security", "http", string.Empty, string.Empty, null, null)
+</div>
+
+

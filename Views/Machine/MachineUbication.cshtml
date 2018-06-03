@@ -1,0 +1,38 @@
+﻿@model WebMia.Models.DataBaseContext
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+@{
+    ViewData["Title"] = "Ubicación";
+    Layout = "_MachineGestionLayout";
+
+}
+
+<div class="table-responsive">
+    <table>
+        <tr id="DisplayData" style="height:2.5em">
+            <td style="width:2%"></td>
+            <td style="width:15%; min-width:100px">IDE</td>
+            <td style="width:40%; min-width:300px">DIRECCION</td>
+            <td style="width:40%; min-width:100px">POBLACION</td>
+            <td style="width:8%; min-width:200px; position:center">UBICACION</td>
+        </tr>
+    </table>
+    <table id="tableData" style=" height:31em; max-height:31em;  class=" table table-hover" background-color:lightgrey">
+
+        @foreach (var item in ViewBag.ListMachineList)
+        {
+            <tr>
+                <td style="width:2%"></td>
+                <td class="NoEditableId" contenteditable="false" style="width:15%; min-width:100px" id="item.id">@item.Id_Machine</td>
+                <td class="NoEditableId" contenteditable="false" style="width:40%; min-width:300px">@item.Address</td>
+                <td class="NoEditableId" contenteditable="false" style="width:40%; min-width:100px">@item.Poblation</td>
+                <td class="NoEditableId" contenteditable="false" style="width:8%; min-width:200px; position:center; padding-left:2em"><a target="_blank" href="https://www.google.es/maps/place/@item.Address+@item.City+@item.Poblation"><img width="20em" height="20em" src="~/images/LinkEarth.png" /></a></td>
+            </tr>
+        }
+
+    </table>
+</div>

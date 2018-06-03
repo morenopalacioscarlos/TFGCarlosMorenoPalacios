@@ -1,0 +1,208 @@
+﻿@model WebMia.Models.Items
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/ProductReload.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+@{
+    ViewData["Title"] = "Cambio";
+    Layout = "_MachineGestionLayout";
+}
+
+<div class="table-responsive">
+    <div style="padding-left:2em">
+
+        <div style="width:30%; height : 31em; max-height:31em; float:left; overflow:auto">
+            <table>
+                <tr id="DisplayData" style="height:2.5em">
+                    <td style="width:10%"></td>
+                    <td style="width:5%; min-width:50px">IDE</td>
+                    <td style="width:70%; min-width:50px">DIRECCION</td>
+                    <td style="width:15%"></td>
+                </tr>
+            </table>
+            <table id="tableDataChangeVending" class="table table-hover" background-color:lightgrey">
+                @if (ViewBag.ListMachineList != null)
+            {
+
+                    @foreach (var item in ViewBag.ListMachineList)
+                {
+                        <tr>
+                            <td style="width:2%"></td>
+                            <td class="Change" contenteditable="false" style="width:18%; " id="@item.Id_Machine">@item.Id_Machine</td>
+                            <td class="Change" contenteditable="false" style="width:80%;" id="@item.Id_Machine">@item.Address</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+
+
+        <div id="divPartial">
+
+            <div style="width:67%;height : 31em; max-height:31em; float:left; overflow:auto">
+                <table>
+                    @if (ViewBag.Change != null)
+            {
+                        <tr id="DisplayData" style="height:2.5em">
+                            <td style="width:5%"></td>
+                            <td style="width:15%; min-width:50px">ID MÁQUINA</td>
+                            <td style="width:10%; min-width:50px">1 ¢</td>
+                            <td style="width:10%; min-width:50px">2 ¢</td>
+                            <td style="width:10%; min-width:50px">5 ¢</td>
+                            <td style="width:10%; min-width:50px">10 ¢</td>
+                            <td style="width:10%; min-width:50px">20 ¢</td>
+                            <td style="width:10%; min-width:50px">50 ¢</td>
+                            <td style="width:10%; min-width:50px">1 €</td>
+                            <td style="width:10%; min-width:50px">2 €</td>
+                            <td style="width:10%"></td>
+
+
+                        </tr>
+                    }
+                    else
+                    {
+                        <h1 style="position:center; text-align:center ; color:grey"> Seleccione una máquina para mostrar sus propiedades</h1>
+
+                    }
+                </table>
+                <table id="tableDataChange" class="table table-hover" background-color:lightgrey">
+                    @if (ViewBag.Change != null)
+            {
+
+                        @foreach (Change item in ViewBag.Change)
+                {
+
+                            <tr>
+                                <td style="width:5%"></td>
+                                <td style="width:5%" hidden="hidden">@item.Id_Change</td>
+                                <td class="EditableNameProductss" contenteditable="false" style="width:15%; ">@item.Id_Machine</td>
+
+                                @if (@item.Coins_1_Cents <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_1_Cents</td>
+                                }
+                                else if (@item.Coins_1_Cents > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_1_Cents</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_1_Cents</td>
+                                }
+
+
+                                @if (@item.Coins_2_Cents <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_2_Cents</td>
+                                }
+                                else if (@item.Coins_2_Cents > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_2_Cents</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_2_Cents</td>
+                                }
+
+
+                                @if (@item.Coins_5_Cents <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_5_Cents</td>
+                                }
+                                else if (@item.Coins_5_Cents > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_5_Cents</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_5_Cents</td>
+                                }
+
+
+                                @if (@item.Coins_10_Cents <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_10_Cents</td>
+                                }
+                                else if (@item.Coins_10_Cents > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_10_Cents</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_10_Cents</td>
+                                }
+
+
+                                @if (@item.Coins_20_Cents <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_20_Cents</td>
+                                }
+                                else if (@item.Coins_20_Cents > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_20_Cents</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_20_Cents</td>
+                                }
+
+
+                                @if (@item.Coins_50_Cents <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_50_Cents</td>
+                                }
+                                else if (@item.Coins_50_Cents > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_50_Cents</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_50_Cents</td>
+                                }
+
+
+                                @if (@item.Coins_1_Eur <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_1_Eur</td>
+                                }
+                                else if (@item.Coins_1_Eur > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_1_Eur</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_1_Eur</td>
+                                }
+
+
+                                @if (@item.Coins_2_Eur <= 3)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:red ">@item.Coins_2_Eur</td>
+                                }
+                                else if (@item.Coins_2_Eur > 8)
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%; color:green ">@item.Coins_2_Eur</td>
+                                }
+                                else
+                                {
+                                    <td class="EditableNameChange" contenteditable="true" style="width:10%;">@item.Coins_2_Eur</td>
+                                }
+                            </tr>
+                        }
+                    }
+                </table>
+
+
+            </div>
+        </div>
+        <button id="SaveChangesChange" class="btn btn-success" style=" margin-top:1em">Confirmar Cambios</button>
+        <button id="Cancelchanges" class="btn btn-danger"  style=" margin-top:1em">Cancelar Cambios</button>
+    </div>
+
+</div>

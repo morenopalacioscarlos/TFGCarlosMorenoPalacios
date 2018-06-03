@@ -1,0 +1,64 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/css/Bar.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+
+
+
+
+<body>
+    <div style="width:100%; min-width:1000px">
+        <div id="LateralBar" style="width:20%; min-width:250px">
+            <b id="TitleLateralLinks">ESTADÍSTICAS</b><br />
+            <ul>
+
+                @*Se comprueba la autorización al acceso de los datos y solo se muestrn los links autorizados*@
+                @if (ViewBag.Allowed != null)
+            {
+                foreach (var item in ViewBag.Allowed)
+                {
+                    switch (item)
+                    {
+                        case "ALL":
+                                <li id="LateralLinks" onclick="window.location.href = '@Url.Action("Index", "Home")';">Inicio</li>
+                                <li id="LateralLinks" onclick="window.location.href = '@Url.Action("ProductsStatsChange", "Stats")';">Estadística productos</li>
+                                <li id="LateralLinks" onclick="window.location.href = '@Url.Action("MachineStatsChange", "Stats")';">Estadística máquinas</li>
+                                <li id="LateralLinks" onclick="window.location.href = '@Url.Action("CloseSession", "Security")';">Cerrar Sesion</li>
+                                
+                                break;
+                            case "INDEX":
+                                <li id="LateralLinks" onclick="window.location.href = '@Url.Action("Index", "Home")';">Inicio</li>
+                                break;
+                            case "CLOSESESSION":
+                                <li id="LateralLinks" onclick="window.location.href = '@Url.Action("CloseSession", "Security")';">Cerrar Sesion</li>
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+
+            </ul>
+            <div id="CopyRight">
+                &copy; Carlos Moreno Palacios
+            </div>
+
+        </div>
+        <div id="NavBarBlue" style="width:75%; min-width:800px">
+            <img class="responsive" src="~/images/banner1.png" />
+        </div>
+    </div>
+
+
+    <div id="RenderBody" style="min-width:900px">
+        @RenderBody()
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Usuario Nuevo";
+    Layout = "_LayoutNewUser";
+}
+<div id="newUserBody" style="min-width:1300px;">
+   
+    <div id="NewUser">
+
+
+        @using (Html.BeginForm("NewUserControl", "Users", FormMethod.Post))
+        {
+            <label>NOMBRE</label>
+            <input type="text" id="UserName" name="UserName" required /><br>
+            <label>ROL</label>
+            <select name="rol" id="rol">
+                @if (ViewBag.Roles != null)
+                {
+                    foreach (Rol item in ViewBag.Roles)
+                    {
+                        <option value="@item.UserRolId"> @item.RolDescription</option>
+                    }
+                }
+
+            </select>
+            <label>USUARIO </label>
+            <input type="text" id="User" name="user" required /><br>
+            <label>CONTRASEÑA </label>
+            <input type="password" id="Password" name="password" required /><br>
+            <label>CONFIRMAR CONTRASEÑA </label>
+            <input type="password" id="ConfirmPassword" name="confirmPassword" required /><br>
+            <label>EMAIL </label>
+            <input type="email" id="email" name="email" required /><br><br>
+            <input type="submit" value="Aceptar" id="AceptNewUser" />
+            <input type="button" id="CancelNewUser" class="btn-danger" value="Volver" onclick="window.location.href = '@Url.Action("UserGestion", "Home")'" />
+        }
+        <div class="errorNewUser">@TempData["InfoPass"]</div>
+
+    </div>
+
+</div>

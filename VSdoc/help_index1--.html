@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Index</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<style>
+		html,body {
+			margin: 0; padding: 0px;
+			height:100%; 
+			min-height:100%;
+			background-color: rgb(233,232,220);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: black;
+		}
+
+		body {font-size:75%;position:relative; margin-top:-1px; border-style: solid solid solid solid;	border-color: rgb(172,168,153);	border-width: 0px 0px 1px 0px;}
+		a { text-decoration:none; color:#06c }
+		form {padding:5px; margin:0px;}
+	</style>
+</head>
+<body style="direction: ltr;">
+	<form>
+	Look for:<br /><input style="width:100%" onKeyDown="check_input(this.value,get_match)" onKeyUp="check_input(this.value,get_match)"/>
+	</form>
+
+	<script>
+		var words = new Array(
+"About Method","Address Property","Admin Class","BuildWebHost Method","Change Class","Change Constructor {WebMia.Models.Change}","Change Method {WebMia.Controllers.DataController}","Change Property","ChangeItemContext Method","ChangeVendingContext Method","CheckLowStockMailService Class","CheckLowStockMailService Constructor","CheckLowStok Class","CheckLowStok Constructor","City Property","CloseSession Method","Coins_10_Cents Property","Coins_1_Cents Property","Coins_1_Eur Property","Coins_20_Cents Property","Coins_2_Cents Property","Coins_2_Eur Property","Coins_50_Cents Property","Coins_5_Cents Property","Configuration Property","Configure Method","ConfigureServices Method","DataBaseContext Class","DataBaseContext Constructor","DataController Class","DataController Constructor","DeleteContextItem Method","DeleteUsers Method {WebMia.Controllers.DataController}","DeleteUsers Method {WebMia.Controllers.SecurityController}","Dispose Method","Email Property","GetInstance Method {WebMia.CustomControls.UserLogged}","GetInstance Method {WebMia.Services.SinglentonCheckService}","GetNewRandomPassword Method","GetUserIdLogged Method {WebMia.Controllers.SecurityController}","GetUserIdLogged Method {WebMia.Interfaces.ILogged}","GetUserLogin Method {WebMia.CustomControls.LoggingTime}","GetUserLogin Method {WebMia.Interfaces.ILoggingTime}","GetUserLogued Method {WebMia.Controllers.SecurityController}","GetUserLogued Method {WebMia.Interfaces.ILogged}","GetUserRolId Method {WebMia.Controllers.SecurityController}","GetUserRolId Method {WebMia.Interfaces.ILogged}","GetUsers Method","HomeController Class","HomeController Constructor","ICheckLowStock Interface","ICheckLowStockMailService Interface","IInitialAlert Interface","ILogged Interface","ILoggingTime Interface","IMail Interface","Id Property","IdXml Property","Id_Change Property","Id_Machine Field","Id_Machine Property {WebMia.Models.Change}","Id_Machine Property {WebMia.Models.Slots}","Id_Machine Property {WebMia.Models.Vending_Machine}","Id_Product Field","Id_Product Property","Id_Slot Field","Id_Slot Property","Index Method","InfoLowStockSave&lt;T1, T2&gt; Class","InfoLowStockSave&lt;T1, T2&gt; Constructor","InitialAlerts Class","InitialAlerts Constructor","IsAllowed Method {WebMia.Controllers.SecurityController}","IsAllowed Method {WebMia.Interfaces.ILogged}","IsUserLogged Method {WebMia.Controllers.SecurityController}","IsUserLogged Method {WebMia.Interfaces.ILogged}","ItemName Property","Items Class","Items Constructor","Items Property","LastUserLogin Method","LoggingTime Class","Login Method","LoginControl Method","MachineGestion Method","MachineList Method","MachineUbication Method","Machine_Model Property","MailOperationType Enumeration","MailService Class","Main Method","Md5Calculator Method","MessageGestion Method","MessagesController Class","MessagesController Constructor","NewMachine Method","NewUser Method","NewUserControl Method","NewUserLogin Method {WebMia.CustomControls.LoggingTime}","NewUserLogin Method {WebMia.Interfaces.ILoggingTime}","Nombre Property","OnConfiguring Method","OperationType Enumeration","PartialChangeView Method","PartialItemsView Method","PartialMessageView Method","PartialSlotsView Method","PassRecovery Method","Password Property","Poblation Property","Price Field","Price Property","Product Field","Products Method","ProductsCheck Method {WebMia.Interfaces.ICheckLowStock}","ProductsCheck Method {WebMia.Services.CheckLowStok}","ProductsEdition Method","Program Class","ReturnInfo Method {WebMia.Controllers.InitialAlerts}","ReturnInfo Method {WebMia.Interfaces.IInitialAlert}","ReturnObject Method","Rol Class","Rol Property","RolDescription Property","RolesPermissionXml Class","RolesPermissionXml Property","SaveChangeData Method","SaveChangeDataChange Method","SaveChangeDataItems Method","SaveChangeDataProducts Method","SaveChangeDataStockProducts Method","SaveChangeMachineAssign Method","SaveNewMachine Method","Security Property","SecurityController Class","SecurityController Constructor","SecurityConversor Class","SendEMail Method","SendEmailLowStock Method {WebMia.Interfaces.ICheckLowStockMailService}","SendEmailLowStock Method {WebMia.Services.CheckLowStockMailService}","SendMail Method {WebMia.CustomControls.MailService}","SendMail Method {WebMia.Interfaces.IMail}","SetMachineAdmin Method","SinglentonCheckService Class","SinglentonCheckService Constructor","Slot_Number Field","Slot_Number Property","Slots Class","Slots Constructor","Slots Property","Startup Class","Startup Constructor","Stock Field","Stock Method","Stock Property","UnionProducts Class","User Field","UserAdministrator Property","UserGestion Method","UserLogged Class","UserRolId Property {WebMia.Models.Admin}","UserRolId Property {WebMia.Models.Rol}","User_Id Property","User_Name Property","Vending_Machine Class","Vending_Machine Constructor","Vending_Machine Property","WebMia Namespace","WebMia Reference","WebMia.Controllers Namespace","WebMia.CustomControls Namespace","WebMia.Interfaces Namespace","WebMia.Models Namespace","WebMia.Services Namespace","id Field","sb Field","userLogged Property","xmlInfo Property"
+		);
+		
+		
+		var oldHighlight = 0;
+		var oldKey = "";
+		
+		function get_match(text) {
+		    var ltext = text.toLowerCase();
+		    for(i in words) {
+		        if(words[i].toLowerCase().indexOf(ltext) == "0") {
+		            return words[i];
+		        }
+		    }
+		    return "";
+		}
+		
+		function highlight(keyword) {
+		    if(oldHighlight) oldHighlight.className = "";
+		    var el = parent.frames['zindex'].document.getElementById("w_"+keyword);
+		    el.className="highlighted";
+		    oldHighlight = el;
+		}
+		
+		function check_input(text, matchfun) {
+		    if(text!=oldKey) {
+		        var keyword = matchfun(text);
+		        if(keyword) {       
+		            highlight(keyword);
+		            parent.frames['zindex'].document.getElementById('w_'+keyword).scrollIntoView();
+		        }
+		        oldKey = text;
+		    }
+		}
+	</script>
+</body>
+</html>
+

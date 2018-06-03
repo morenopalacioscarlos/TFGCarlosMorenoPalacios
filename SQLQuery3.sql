@@ -1,0 +1,1 @@
+﻿select date from solded where IdMachine = 12 and Date >= '05/05/2018 21:49:37' 

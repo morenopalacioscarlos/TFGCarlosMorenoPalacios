@@ -1,0 +1,25 @@
+﻿
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+<h2>Esta es la pagina de welcome</h2>
+<p> en total tenemos toda esta lista</p>
+
+
+<div>
+    @ViewBag.Personas.Id
+    @ViewBag.Personas.Name
+    @ViewBag.Personas.SecondName
+    @ViewBag.Personas.Age
+    
+</div>
+<br />
+
+<br />
+<div>
+    <input type="button" name="Button" value=" Ver los datitos" onclick="window.location.href = '@Url.Action("Index", "Home")';" />
+</div>
+
+

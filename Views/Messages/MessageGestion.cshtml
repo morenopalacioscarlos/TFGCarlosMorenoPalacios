@@ -1,0 +1,105 @@
+﻿
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/ProductReload.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<link href="~/css/SandwichStyle.css" rel="stylesheet" />
+<script src="~/js/Messages.js"></script>
+
+<title>Mensajes</title>
+
+@{
+    var userIdMessageTo = string.Empty;
+    var userNameMessageTo = string.Empty;
+}
+<html>
+<body>
+    <div style="width:30%;  height:47em; float:left;  border-color:grey; border-style:solid; overflow:auto">
+        <table>
+            <tr id="DisplayData" style="height:2.5em">
+                <td style="width:5%; padding-left:1em; min-width:50px">IDE</td>
+                <td style="width:70%; padding-left: 1.5em;  min-width:50px">NOMBRE</td>
+            </tr>
+        </table>
+        <table id="tableDataMessage" class="table table-hover" background-color:lightgrey">
+
+            @foreach (Admin item in ViewBag.Users)
+            {
+                //Se obvia la posibilidad de enviar un mensaje al mismo usuario actual
+                @if (item.User_Id == ViewBag.ActualUser)
+                {
+                    continue;
+                }
+                //Se cargan todos los usuarios registrados en la plataforma
+                <tr>
+                    <td class="MessageUser" contenteditable="false" style="width:18%; " id="@item.User_Id">@item.User_Id</td>
+                    <td class="MessageUser" contenteditable="false" style="width:80%;" id="@item.User_Id">@item.Nombre</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div id="divPartial">
+
+        <div id="autoscroll" style="width:70%;   height : 40em; max-height:40em; float:left;  border-color:grey; border-style:solid ;overflow:auto">
+
+            <table>
+                @if (ViewBag.MessageList == null)
+            {
+                    <h1 style="position:center; text-align:center ; color:grey"> Seleccione un usuario para iniciar conversación</h1>
+                }
+            </table>
+
+            <table id="tableDataMessages" style="width:100%;">
+                @if (ViewBag.MessageList != null)
+                {
+                    // tupla con la siguiente información : from, to, mensaje
+                    @foreach (Tuple<int, int, string> item in ViewBag.MessageList)
+                {
+
+                        <tr>
+                            @*Se obvia al usuario con id 0 ya que es el destino de los mensajes y se asocia al usuario destinatario de los mensajes *@
+                            @if (item.Item1 == 0)
+                            {
+                                userIdMessageTo = item.Item2.ToString();
+                                userNameMessageTo = item.Item3.ToString();
+                                continue;
+                            }
+                            else if (item.Item1 == ViewBag.ActualUser)
+                            {
+                                <td class="sandwichLeft">- @item.Item3</td>
+                            }
+                            else
+                            {
+                                <td class="sandwichRight">- @item.Item3</td>
+                            }
+                        </tr>
+                        <tr style="height:10px"></tr>
+                    }
+                }
+
+            </table>
+
+        </div>
+    </div>
+    <div>
+        @if (userNameMessageTo != null && userNameMessageTo != string.Empty)
+        {
+            @using (Html.BeginForm("MessageSave", "Messages", FormMethod.Post))
+            {
+                <label>To: @userNameMessageTo</label>
+                <input id="messageToSend" name="messageToSend" type="text" placeholder="Introduzca aquí su mensaje" required style="width:48%; height:7%" />
+                <input id="userIdFrom" hidden="hidden" name="userIdFrom" value=@ViewBag.ActualUser />
+                <input id="userIdTo" hidden="hidden" name="userIdTo" value=@userIdMessageTo />
+                <button type="submit" id="SendMessage" style="width:10em; height:7%; float:right; position:center" class="btn btn-success">Enviar Mensaje</button>
+            }
+        }
+        <button id="BackMessage" style="width:10em;  border-radius:20px; position:center;  float:none;" class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Home")'">Volver</button>
+   </div>
+</body>
+</html>

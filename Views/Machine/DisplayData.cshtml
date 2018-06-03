@@ -1,0 +1,41 @@
+﻿@model WebMia.Models.DataBaseContext
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/site.js"></script>
+
+
+@{
+    ViewData["Title"] = "DisplayData";
+    
+}
+
+<h1>Los datos que hay en la base de datos</h1>
+
+<div>
+    <table>
+        <tr>
+            <td style="width: 500px">MODELO</td>
+            <td style="width: 100px">UBICACION</td> 
+        </tr>
+    </table>
+
+    <table id="tableData" class="table table-hover" background-color:lightgrey">
+
+        @foreach (var item in ViewBag.MyList)
+        {
+            <tr>
+                <td class="NoEditableId" contenteditable="true" style="width:100px" id="item.id">@item.Id_Slot</td>
+                <td class="NoEditableId" contenteditable="true" style="width:100px" id="item.id">@item.Price</td>
+              
+            </tr>
+        }
+    </table>
+    <button class="btn-danger" id="Cancel">Cancel Changes</button>
+    <button class="btn-success" id="Save" onclick="window.location.href = '@Url.Action("Index", "Home")';">Save Changes</button>
+   
+</div>
+    
+
+

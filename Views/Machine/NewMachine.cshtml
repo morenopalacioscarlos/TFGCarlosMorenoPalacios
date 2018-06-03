@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Alta de Máquina";
+    Layout = "_NewMachineLayout";
+}
+<div id="newUserBody" style="min-width:1300px;">
+
+
+    <div id="NewMachine">
+
+        @using (Html.BeginForm("SaveNewMachine", "Machine", FormMethod.Post))
+        {
+            <label>MODELO </label>
+            <input type="text" id="Model" name="Model" required /><br>
+            <label>CIUDAD </label>
+            <input type="text" id="City" name="City" required /><br>
+            <label>DIRECCION </label>
+            <input type="text" id="Address" name="Address" required /><br>
+            <label>POBLACION </label>
+            <input type="text" id="Poblation" name="Poblation" required /><br>
+            <label>SLOTS MAQUINA </label>
+            <input type="number" id="Slots" name="Slots" required /><br>
+            <input type="submit" value="Aceptar" id="AceptNewMachine" />
+            <input type="button" id="CancelNewMachine"  value="Volver" onclick="window.location.href = '@Url.Action("MachineGestion", "Home")';" />
+        }
+        <div class="infoNewMachine">@TempData["InfoNewMachine"]</div>
+    </div>
+
+
+</div>
+
+

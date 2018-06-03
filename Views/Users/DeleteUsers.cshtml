@@ -1,0 +1,56 @@
+﻿@model WebMia.Models.DataBaseContext
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+
+@{
+    ViewData["Title"] = "Borrar usuarios";
+    Layout = "_UserGestionLayout";
+
+}
+<div style="padding-left:6em">
+    <div style="padding-top:2em; font-size:2vw"> Seleccione un usuario para eliminar: </div>
+    @using (Html.BeginForm("UserDelete", "Users", FormMethod.Post))
+    {
+        const int ADMIN_ID = 1007;
+        <select name="RolDeleteUser" id="RolDeleteUser">
+            <option value="Default">Usuarios</option>
+
+            @foreach (Admin item in ViewBag.ActiveUsers)
+            {
+                if (item.UserRolId == 0 && item.Nombre == null)
+                {
+                    continue;
+                }
+
+                //roles de usuarios
+                var roles = ViewBag.Roles as IEnumerable<Rol>;
+                var userAsignationRol = roles.Where(x => x.UserRolId == item.UserRolId).Select(x => x.RolDescription).FirstOrDefault();
+
+                //no se puede borrar el administrador, por lo que se marca en gris
+                if (item.User_Id == ADMIN_ID)
+                {
+                    <option value="@item.User_Id" style="background-color:grey">@userAsignationRol | @item.Nombre | @item.Email </option>
+                }
+                //tampoco se puede eliminar el usuario actual, se marca en rojo
+                else if (item.User_Id == ViewBag.ActualUser)
+                {
+                    <option value="@item.User_Id" style="background-color:darkred">@userAsignationRol | @item.Nombre | @item.Email </option>
+                }
+                else
+                {
+                    <option value="@item.User_Id">@userAsignationRol| @item.Nombre | @item.Email </option>
+                }
+
+
+            }
+        </select>
+        <input type="submit" value="Borrar Usuario" class="btn btn-danger" id="BtnDeleteUser" style="border-radius:20px" />
+
+    }
+
+    <div>@TempData["DeleteUsers"]</div>
+
+</div>
+
+<img src="~/images/BorrarUsuarios.png" style="padding-left:3em" class="responsive"/>

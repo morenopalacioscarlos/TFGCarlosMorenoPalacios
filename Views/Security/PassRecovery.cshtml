@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Recuperación Contraseña";
+    Layout ="_PassRecoveryLayout";
+}
+
+<div id="PasswordRecovery">
+
+    @using (Html.BeginForm("SendEMail", "Security", FormMethod.Post))
+    {
+        <label>USUARIO </label>
+        <input type="text" id="User" name="user" required /><br>
+        <label>EMAIL </label>
+        <input type="email" id="User" name="UserMail" required /><br>
+        <input type="submit" value="Aceptar" id="Acept"/>
+        <input type="button" id="Cancel" class="btn-danger" value="Volver" onclick="window.location.href = '@Url.Action("Login", "Security")';" />
+
+    }
+    <div class=" RecoveryPass">@TempData["EmailPass"]</div>
+
+
+</div>
+
+

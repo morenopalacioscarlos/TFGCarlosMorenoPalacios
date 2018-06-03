@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Registro Login";
+    Layout = "_UserGestionLayout";
+}
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/Users.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LastUserLogin</title>
+</head>
+<body>
+    <div style="width:auto; height : 28em; float:right; padding-right:5em;  border-color:grey; border-style:solid; overflow:auto">
+        @if (ViewBag.LastUserLogin != null)
+        {
+            <table>
+                @foreach (Tuple<int, string> item in ViewBag.LastUserLogin)
+                {
+                    <tr>
+                        <td>Id Usuario --------------------->@item.Item1</td>
+                        <td>---------------------------------------------------</td>
+                        <td>Conexión   ------------------------------------------->@item.Item2</td>
+                    </tr>
+                }
+            </table>
+        }
+        </div>
+</body>
+</html>

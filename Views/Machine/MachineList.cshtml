@@ -1,0 +1,47 @@
+﻿@model WebMia.Models.DataBaseContext
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+@{
+    ViewData["Title"] = "Listado de Máquinas";
+    Layout = "_MachineGestionLayout";
+
+}
+<div class="table-responsive">
+    <table>
+        <tr id="DisplayData" style="height:2.5em">
+            <td style="width:10%; min-width:100px ;padding-left:2em">IDE</td>
+            <td style="width:15%; min-width:120px">MODELO</td>
+            <td style="width:15%; min-width:100px">CIUDAD</td>
+            <td style="width:15%; min-width:100px">POBLACION</td>
+            <td style="width:35%; min-width:300px">DIRECCION</td>
+            <td style="width:10%; min-width:100px">ELIMINAR</td>
+        </tr>
+    </table>
+    <div class="MachineList">
+        <table id="tableData" class="table table-hover" background-color:lightgrey">
+
+            @foreach (var item in ViewBag.ListMachineList)
+            {
+                <tr>
+                    <td class="NoEditableId" contenteditable="false" style="width:10%; min-width:100px ;padding-left:2em">@item.Id_Machine</td>
+                    <td class="EditableName" contenteditable="true" style="width:15%; min-width:120px">@item.Machine_Model</td>
+                    <td class="EditableName" contenteditable="true" style="width:15%; min-width:100px">@item.City</td>
+                    <td class="EditableName" contenteditable="true" style="width:15%; min-width:100px">@item.Poblation</td>
+                    <td class="EditableName" contenteditable="true" style="width:35%; min-width:300px">@item.Address</td>
+                    <td><img width="20em" class="DeleteMachine" height="20em" src="~/images/DeleteX.png" value=" @item.Id_Machine" /></td>
+                </tr>
+            }
+
+        </table>
+    </div>
+ </div>
+    <div style="padding-left:2em">
+        <button id="Savechanges" class="btn btn-success" style="margin-top:1em">Confirmar Cambios</button>
+        <button id="Cancelchanges" class="btn btn-danger" style=" margin-top:1em">Cancelar Cambios</button>
+    </div>
+

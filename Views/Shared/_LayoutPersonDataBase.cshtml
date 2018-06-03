@@ -1,0 +1,23 @@
+﻿@model WebMia.Models.DataBaseContext
+    
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+    <script src="~/js/ButtonsJs.js"></script>
+    <title>@ViewBag.Title</title>
+  
+</head>
+
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+    <br />
+    <input type="button" name="Button" class="btn-default" value=" Volver a index" onclick="window.location.href = '@Url.Action("Index", "Home")';" />
+    
+</body>
+</html>

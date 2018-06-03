@@ -1,0 +1,106 @@
+﻿@model WebMia.Models.DataBaseContext
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="~/js/ProductReload.js"></script>
+<script src="~/js/site.js"></script>
+<link href="~/css/DisplayDataStyle.css" rel="stylesheet" />
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+@{
+    ViewData["Title"] = "Productos";
+    Layout = "_MachineGestionLayout";
+}
+<div style="padding-left:2em">
+    <div style="width:30%; height : 31em; max-height:31em; float:left; overflow:auto">
+        <table>
+            <tr id="DisplayData" style="height:2.5em">
+                <td style="width:10%"></td>
+                <td style="width:5%; min-width:50px">ID</td>
+                <td style="width:70%; min-width:50px">PRODUCTO</td>
+                <td style="width:15%"></td>
+            </tr>
+        </table>
+        <table id="tableData" class="table table-hover" background-color:lightgrey">
+
+            @foreach (var item in ViewBag.Items)
+            {
+                if (item.Id != 0 || item.ItemName != "Sin Productos")
+                {
+                    <tr>
+                        <td style="width:2%"></td>
+                        <td class="Item" contenteditable="false" style="width:18%; " id="@item.Id">@item.Id</td>
+                        <td class="Item" contenteditable="false" style="width:80%;" id="@item.Id">@item.ItemName</td>
+                    </tr>
+                }
+            }
+
+        </table>
+    </div>
+
+    <div id="divPartial">
+
+        <div style="width:67%;height : 31em; max-height:31em; float:left; overflow:auto">
+            <table>
+
+                @if (ViewBag.MachineItems != null)
+                {
+
+                    <tr id="DisplayData" style="height:2.5em">
+                        <td style="width:10%"></td>
+                        <td style="width:10%; min-width:50px">ID</td>
+                        <td style="width:20%; min-width:50px">PRODUCTO</td>
+                        <td style="width:20%; min-width:50px">STOCK</td>
+                        <td style="width:10%"></td>
+
+                    </tr>
+                }
+                else
+                {
+                    <h1 style="position:center; text-align:center ; color:grey">Seleccione un artículo para mostrar el stock actual</h1>
+
+                }
+
+            </table>
+
+            <table id="tableDataItemsStock" class="table table-hover" background-color:lightgrey">
+                @if (ViewBag.MachineItems != null)
+            {
+                foreach (WebMia.Controllers.MachineController.UnionProducts item in ViewBag.MachineItems)
+                {
+                        <tr>
+                            <td style="width:6%"></td>
+                            <td class="IdMachineClick" onclick="window.location.href = '@Url.Action("Products", "Machine")'" contenteditable="false" style="width:10%; ">@item.Id_Machine</td>
+                            <td class="EditableNameItemss" contenteditable="false" style="width:20%; ">@item.Product</td>
+
+                            @if (item.Stock <= 3)
+                            {
+                                <td class="EditableNameItems" contenteditable="false" style="width:30%; color:red;  font-weight:bold">@item.Stock</td>
+                            }
+                            else if (item.Stock > 8)
+                            {
+                                <td class="EditableNameItems" contenteditable="false" style="width:30%;  color:green; font-weight:bold">@item.Stock</td>
+                            }
+                            else
+                            {
+                                <td class="EditableNameItems" contenteditable="false" style="width:30%; font-weight:bold">@item.Stock</td>
+                            }
+                            <td class="EditableNameItemss" contenteditable="false" style="width:0.1%; visibility:hidden">@item.Id_Slot</td>
+                            <td class="EditableNameItemss" contenteditable="false" style="width:0.1%; visibility:hidden ">@item.Id_Product</td>
+
+
+
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+
+    </div>
+
+    <button id="SavechangesItemsStock" class="btn btn-success" style="margin-top:1em" >Confirmar Cambios</button>
+    <button id="Cancelchanges" class="btn btn-danger" style="  margin-top:1em" >Cancelar Cambios</button>
+
+</div>

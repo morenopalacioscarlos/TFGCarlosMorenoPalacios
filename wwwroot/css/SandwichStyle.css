@@ -1,0 +1,24 @@
+﻿
+.sandwichLeft {
+    float: left;
+    padding-left: 2em;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: floralwhite;
+    text-align: center;
+}
+
+
+
+.sandwichRight {
+    float: right;
+    padding-right: 2em;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    background-color: green;
+    color: floralwhite;
+    text-align:center;
+}
