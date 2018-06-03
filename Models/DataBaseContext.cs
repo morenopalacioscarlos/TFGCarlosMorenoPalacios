@@ -27,11 +27,9 @@ namespace WebMia.Models
             base.OnConfiguring(optionsBuilder);
 
             //Conexión a base de datos local
-           // optionsBuilder.UseSqlServer("Server =(localdb)\\MSSQLLocalDB;Database="+ GetCurrentDirectoyPath());
+            optionsBuilder.UseSqlServer("Server =(localdb)\\MSSQLLocalDB;Database="+ GetCurrentDirectoyPath());
 
-            //Conexión a base de datos microsoft sql server
-             optionsBuilder.UseSqlServer("Server=tcp:machinevendingtfg.database.windows.net,1433;Initial Catalog=MachineVendingTfg;Persist Security Info=False;User ID=charlymoreno20022Tfg;Password=Mo64950428;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-        }
+            }
 
         /// <summary>
         /// Devuelve el path del directorio donde se encuentra la base de datos local
@@ -50,10 +48,7 @@ namespace WebMia.Models
         public string GetDataBaseConectionString()
         {
             //Conexión a base de datos local
-            //return "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = " + GetCurrentDirectoyPath() + "; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
-
-            //conexión a base de datos microsoft sql server
-            return "Data Source = machinevendingtfg.database.windows.net; Initial Catalog = MachineVendingTfg; Integrated Security = False; User ID = charlymoreno20022Tfg; Password = Mo64950428; Connect Timeout = 60; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
-        }
+            return "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = " + GetCurrentDirectoyPath() + "; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+       }
     }
 }

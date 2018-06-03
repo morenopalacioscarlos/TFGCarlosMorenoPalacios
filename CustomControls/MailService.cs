@@ -28,7 +28,7 @@ namespace WebMia.CustomControls
         public void SendMail(string mailTo, string user, string password, MailOperationType mailOperation, string product= null)
         {
             var mail = new MailMessage();
-            string mailAdmin = "TFGCarlosMorenoPalacios@gmail.com";
+            string mailAdmin = "xxx@gmail.com";
             SmtpClient smtp = new SmtpClient();
             mail.From = new MailAddress(mailAdmin);
             mail.To.Add(mailTo);
@@ -56,7 +56,7 @@ namespace WebMia.CustomControls
 
             smtp.Host = "smtp.gmail.com";
             smtp.Port = 25;
-            smtp.Credentials = new NetworkCredential(mailAdmin, "adminTFG");
+            smtp.Credentials = new NetworkCredential(mailAdmin, "xxx");
             smtp.EnableSsl = true;
 
             try

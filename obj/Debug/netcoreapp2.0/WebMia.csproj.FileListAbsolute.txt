@@ -86,3 +86,14 @@ C:\Users\charl\Desktop\TFG\TFG_AplicacionWEb\obj\Debug\netcoreapp2.0\WebMia.Asse
 C:\Users\charl\Desktop\TFG\TFG_AplicacionWEb\obj\Debug\netcoreapp2.0\WebMia.AssemblyInfo.cs
 C:\Users\charl\Desktop\TFG\TFG_AplicacionWEb\obj\Debug\netcoreapp2.0\WebMia.dll
 C:\Users\charl\Desktop\TFG\TFG_AplicacionWEb\obj\Debug\netcoreapp2.0\WebMia.pdb
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\bin\Debug\netcoreapp2.0\WebMia.deps.json
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\bin\Debug\netcoreapp2.0\WebMia.runtimeconfig.json
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\bin\Debug\netcoreapp2.0\WebMia.runtimeconfig.dev.json
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\bin\Debug\netcoreapp2.0\WebMia.dll
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\bin\Debug\netcoreapp2.0\WebMia.pdb
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\obj\Debug\netcoreapp2.0\WebMia.csprojResolveAssemblyReference.cache
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\obj\Debug\netcoreapp2.0\WebMia.csproj.CoreCompileInputs.cache
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\obj\Debug\netcoreapp2.0\WebMia.AssemblyInfoInputs.cache
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\obj\Debug\netcoreapp2.0\WebMia.AssemblyInfo.cs
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\obj\Debug\netcoreapp2.0\WebMia.dll
+C:\Users\charl\Documents\GitHub\TFGCarlosMorenoPalacios\obj\Debug\netcoreapp2.0\WebMia.pdb

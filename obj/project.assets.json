@@ -13479,11 +13479,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\charl\\Desktop\\TFG\\TFG_AplicacionWEb\\WebMia.csproj",
+      "projectUniqueName": "C:\\Users\\charl\\Documents\\GitHub\\TFGCarlosMorenoPalacios\\WebMia.csproj",
       "projectName": "WebMia",
-      "projectPath": "C:\\Users\\charl\\Desktop\\TFG\\TFG_AplicacionWEb\\WebMia.csproj",
+      "projectPath": "C:\\Users\\charl\\Documents\\GitHub\\TFGCarlosMorenoPalacios\\WebMia.csproj",
       "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\charl\\Desktop\\TFG\\TFG_AplicacionWEb\\obj\\",
+      "outputPath": "C:\\Users\\charl\\Documents\\GitHub\\TFGCarlosMorenoPalacios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
